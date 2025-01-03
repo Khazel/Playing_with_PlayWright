@@ -106,7 +106,7 @@ describe("Home_work_12", () => {
         await datePicker.fill("14/12/2024");
         await submitButton.click();
 
-        expect(submissionForm).toHaveText("The form was successfully submitted!");
+        await expect(submissionForm).toHaveText("The form was successfully submitted!");
 
     });
 
